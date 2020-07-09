@@ -1,0 +1,87 @@
+/* 비주얼영역시작 */
+section#brand_vis_wrap{
+  width:100%; height:120px; float:left; background:url("/mobile/brand/images/brand_vis_bg.png")no-repeat center top; background-size:cover;
+}
+/* 비주얼영역끝 */
+/* 컨텐츠영역시작 */
+/* story */
+section#story_wrap{
+  width:100%; float:left;
+}
+ul.story_list{
+  width:100%;
+}
+ul.story_list li{
+  width:100%; float:left; border-bottom:solid 1px #eee; 
+}
+ul.story_list li:last-child{
+  border:none;
+}
+p.story_img{
+  width:90%; margin:0px auto; margin-top:16px;
+}
+p.story_img img{
+  width:100%; border-radius:20px;
+}
+p.story_title{
+  padding:10px 0px; text-align:center; font:bold 18px/27px "Nato Sans KR"; color:#950202;
+}
+p.story_text{
+  width:80%; margin:0px auto; text-align:justify; font:normal 14px/21px "Nato Sans KR";
+}
+/* logo */
+section#logo_wrap{
+  width:100%; float:left;
+}
+p.contents_logo{
+  width:45%; float:left; margin:16px 0px 16px 3.33%; position:relative; left:0px; top:0px;
+}
+p.contents_logo img{
+  width:100%; border:solid 1px #eee; border-radius:20px; box-sizing:border-box;
+}
+p.symbol::after{
+  content:"Symbol";
+  display:block; position:absolute; left:10%; top:0px; width:80%; height:30px; background:#434343; color:white; font:normal 14px/30px "Roboto"; text-align:center; border-radius:0px 0px 20px 20px;
+}
+p.fontlogo::after{
+  content:"Fontlogo";
+  display:block; position:absolute; left:10%; top:0px; width:80%; height:30px; background:#434343; color:white; font:normal 14px/30px "Roboto"; text-align:center; border-radius:0px 0px 20px 20px;
+}
+/* color */
+section#color_wrap{
+  width:100%; float:left; padding-bottom:32px;
+}
+ul.color_list{
+  width:100%;
+}
+ul.color_list li{
+  width:45%; height:216px; float:left; margin:16px 0px 16px 3.33%; border-radius:20px;
+}
+ul.color_list li:nth-child(1){
+  background:#7d0022;
+}
+ul.color_list li:nth-child(2){
+  background:#b79e66;
+}
+ul.color_list li:nth-child(3){
+  background:#ffffff; border:solid 1px #434343; box-sizing:border-box;
+}
+ul.color_list li:nth-child(4){
+  background:#434343;
+}
+ul.color_list li p{
+  color:white; font:normal 14px/21px "Nato Sans KR"; text-align:center;
+}
+ul.color_list li:nth-child(3) p{
+  color:black;
+}
+p.color_name{
+  margin-top:25px;
+}
+p.color_title{
+  margin-top:10px;
+}
+ul.color_list li p.color_text{
+  width:90%; margin-top:10px; margin-left:5%; text-align:justify;
+}
+/* 컨텐츠영역끝 */
