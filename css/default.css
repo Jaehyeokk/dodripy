@@ -166,7 +166,7 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2)}
   width:100%; 
 }
 #board_contents{
-  width:1200px; min-height:1200px; margin:0px auto; position:relative; left:50%; margin-left:-600px; top:0px; padding-top:50px; box-sizing:border-box; 
+  width:1200px; min-height:800px; margin:0px auto; position:relative; left:50%; margin-left:-600px; top:0px; padding-top:50px; box-sizing:border-box; 
   float:left;
 }
 

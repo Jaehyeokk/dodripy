@@ -23,6 +23,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 
 add_stylesheet('<link rel="stylesheet" type="text/css" href="/css/common_jack.css">', 0);
+add_stylesheet('<link rel="stylesheet" type="text/css" href="/css/mediascreen_jack.css">', 0);
+add_stylesheet('<link rel="stylesheet" href="/store/store_dodripy.css">', 0);
 add_javascript('<script src="/js/common_jack.js"></script>', 0);
 
 ?>
@@ -111,7 +113,7 @@ add_javascript('<script src="/js/common_jack.js"></script>', 0);
               </ul>
             </li>
             <li><a href="/bbs/board.php?bo_table=storeA">Store</a>
-              <ul class="submenu_list">
+            <ul class="submenu_list">
                 <li><a href="/bbs/board.php?bo_table=storeA">원두&#47;드립백</a></li>
                 <li><a href="/bbs/board.php?bo_table=storeB">드립 용품</a></li>
                 <li><a href="/bbs/board.php?bo_table=storeC">기타 재료</a></li>
@@ -182,13 +184,34 @@ add_javascript('<script src="/js/common_jack.js"></script>', 0);
 			
 	?>
 
-	  <section id="board_visual">
-      <!--회원가입및게시판 상단 비쥬얼 -->		
-    </section> 
-		
-		<div id="board_wrapper">
 
+    <!-- 비주얼영역시작 -->
+	  <section id="board_visual">
+	    <div id="store_vis_wrap"></div>
+	    <div id="store_menu_wrap">
+	      <nav class="store_menu">
+	        <h2 class="hidden">브랜드메뉴</h2>
+	        <ul class="store_menu_list">
+	          <li><a href="/bbs/board.php?bo_table=storeA">원두/드립백</a></li>
+	          <li><a href="/bbs/board.php?bo_table=storeB">드립 용품</a></li>
+	          <li><a href="/bbs/board.php?bo_table=storeC">기타 재료</a></li>
+	        </ul>
+	      </nav>
+	    </div>
+	  </section>
+    <?
+    if ($bo_table=='storeA') echo ('<style type="text/css"> .store_menu_list li:nth-child(1) a{font-weight:bold} </style>') ;
+    if ($bo_table=='storeB') echo ('<style type="text/css"> .store_menu_list li:nth-child(2) a{font-weight:bold} </style>') ;
+    if ($bo_table=='storeC') echo ('<style type="text/css"> .store_menu_list li:nth-child(3) a{font-weight:bold} </style>') ;
+		?>
+
+		<div id="board_wrapper">
 			<section id="board_contents">
+      <?
+        if ($bo_table=='storeA') echo ('<p class="page_title">Whole Bean & Drip Bag</p>') ;
+        if ($bo_table=='storeB') echo ('<p class="page_title">Drip product</p>') ;
+        if ($bo_table=='storeC') echo ('<p class="page_title">etc</p>') ; 
+      ?>  
 			<!-- 회원가입및게시판 컨텐츠 레이아웃시작 -->
 
 

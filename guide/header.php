@@ -6,7 +6,7 @@
       <nav class="guide_menu">
         <h2 class="hidden">브랜드메뉴</h2>
         <ul class="guide_menu_list">
-          <li><a href="/guide/guide.php">가이드 소개</a></li>
+          <li><a href="/guide/guide.php"><strong>가이드 소개</strong></a></li>
           <li><a href="/bbs/board.php?bo_table=guideA">입문 가이드</a></li>
           <li><a href="/bbs/board.php?bo_table=guideB">중급 가이드</a></li>
           <li><a href="/bbs/board.php?bo_table=guideC">응용 가이드</a></li>

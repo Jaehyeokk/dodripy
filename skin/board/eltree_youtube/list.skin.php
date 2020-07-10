@@ -17,30 +17,8 @@ else
     $list_num = ($page - 1) * ($list_page_rows - $notice_count) + 1;
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
-add_stylesheet('<link rel="stylesheet" href="/guide/guide_dodripy.css">', 0);
-
 ?>
 
-<div id="board_wrapper">
-  <!-- 가이드게시판 비주얼영역 시작 -->
-  <div id="guide_vis_wrap"></div>
-  <div id="guide_menu_wrap">
-    <nav class="guide_menu">
-      <h2 class="hidden">브랜드메뉴</h2>
-      <ul class="guide_menu_list">
-        <li><a href="/guide/guide.php">가이드 소개</a></li>
-        <li><a href="/bbs/board.php?bo_table=guideA">입문 가이드</a></li>
-        <li><a href="/bbs/board.php?bo_table=guideB">중급 가이드</a></li>
-        <li><a href="/bbs/board.php?bo_table=guideC">응용 가이드</a></li>
-      </ul>
-    </nav>
-  </div>   
-  <?
-    if ($bo_table=='guideA') echo ('<p class="page_title">Beginner Guide</p>') ;
-    if ($bo_table=='guideB') echo ('<p class="page_title">Intermediate guide</p>') ;
-    if ($bo_table=='guideC') echo ('<p class="page_title">Expert Guide</p>') ; 
-  ?>
-  <section id="board_contents">
 <!-- 게시판 목록 시작 { -->
 <div id="bo_list" style="width:<?php echo $width; ?>">
 
