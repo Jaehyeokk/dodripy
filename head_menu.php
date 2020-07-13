@@ -8,10 +8,10 @@ if(defined('G5_THEME_PATH')) {
 
 // 모바일 접속시 모바일전용 head.php 파일연동 
 
-if (G5_IS_MOBILE) {
+/* if (G5_IS_MOBILE) {
     include_once(G5_MOBILE_PATH.'/head.php');
     return;
-}
+} */
 
 include_once(G5_PATH.'/head.sub.php');
 include_once(G5_LIB_PATH.'/latest.lib.php');
@@ -23,6 +23,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 
 add_stylesheet('<link rel="stylesheet" type="text/css" href="/css/common_dodripy.css">', 0);
+add_stylesheet('<link rel="stylesheet" href="/menu/menu_dodripy.css">', 0);
+add_stylesheet('<link rel="stylesheet" type="text/css" href="/css/mediascreen_dodripy.css">', 0);
 add_javascript('<script src="/js/common_dodripy.js"></script>', 0);
 
 ?>
@@ -111,7 +113,7 @@ add_javascript('<script src="/js/common_dodripy.js"></script>', 0);
               </ul>
             </li>
             <li><a href="/bbs/board.php?bo_table=storeA">Store</a>
-              <ul class="submenu_list">
+            <ul class="submenu_list">
                 <li><a href="/bbs/board.php?bo_table=storeA">원두&#47;드립백</a></li>
                 <li><a href="/bbs/board.php?bo_table=storeB">드립 용품</a></li>
                 <li><a href="/bbs/board.php?bo_table=storeC">기타 재료</a></li>
@@ -182,13 +184,38 @@ add_javascript('<script src="/js/common_dodripy.js"></script>', 0);
 			
 	?>
 
-	  <section id="board_visual">
-      <!--회원가입및게시판 상단 비쥬얼 -->		
-    </section> 
-		
-		<div id="board_wrapper">
 
+    <!-- 비주얼영역시작 -->
+	  <section id="board_visual">
+	    <div id="menu_vis_wrap"></div>
+	    <div id="menu_menu_wrap">
+	      <nav class="menu_menu">
+	        <h2 class="hidden">브랜드메뉴</h2>
+	        <ul class="menu_menu_list">
+	          <li><a href="/menu/menu.php">매장 위치</a></li>
+	          <li><a href="/bbs/board.php?bo_table=menuA">메뉴 소개</a></li>
+	          <li><a href="/bbs/board.php?bo_table=menuB">FAQ</a></li>
+	          <li><a href="/bbs/board.php?bo_table=menuC">1:1 문의</a></li>
+	          <li><a href="/bbs/board.php?bo_table=menuD">예약하기</a></li>
+	        </ul>
+	      </nav>
+	    </div>
+	  </section>
+    <?
+    if ($bo_table=='menuA') echo ('<style type="text/css"> .store_menu_list li:nth-child(1) a{font-weight:bold} </style>') ;
+    if ($bo_table=='menuB') echo ('<style type="text/css"> .store_menu_list li:nth-child(2) a{font-weight:bold} </style>') ;
+    if ($bo_table=='menuC') echo ('<style type="text/css"> .store_menu_list li:nth-child(3) a{font-weight:bold} </style>') ;
+    if ($bo_table=='menuD') echo ('<style type="text/css"> .store_menu_list li:nth-child(4) a{font-weight:bold} </style>') ;
+		?>
+
+		<div id="board_wrapper">
 			<section id="board_contents">
+      <?
+        if ($bo_table=='menuA') echo ('<p class="page_title">Menu</p>') ;
+        if ($bo_table=='menuB') echo ('<p class="page_title">FAQ</p>') ;
+        if ($bo_table=='menuC') echo ('<p class="page_title">1:1 Question</p>') ; 
+        if ($bo_table=='menuD') echo ('<p class="page_title">Reserve</p>') ; 
+      ?>  
 			<!-- 회원가입및게시판 컨텐츠 레이아웃시작 -->
 
 

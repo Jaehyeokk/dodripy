@@ -116,7 +116,7 @@
 .filebox .btn_file {display:inline-block;position:absolute;right:8px;top:8px;border:1px solid #3a8afd;border-radius:3px;width:70px;height:30px;color:#3a8afd;font-size:1em;line-height:30px;font-weight:bold;text-align:center;vertical-align:middle}
 .filebox input[type="file"] {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 
-.adress {background:red;width:100%}
+.adress {width:100%}
 .adress #reg_mb_zip {width:100%;position:relative}
 .adress .btn_frmline {position:absolute;top:8px;right:8px;height:40px;padding:0 10px;border-radius:3px}
 

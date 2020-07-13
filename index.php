@@ -15,9 +15,9 @@ if(defined('G5_THEME_PATH')) {
 } 
 include_once(G5_PATH.'/head.php');
 
-add_stylesheet('<link rel="stylesheet" type="text/css" href="/css/main_jack.css">', 0);
-add_stylesheet('<link rel="stylesheet" type="text/css" href="/css/mediascreen_jack.css">', 0);
-add_javascript('<script src="/js/main_jack.js"></script>', 0);
+add_stylesheet('<link rel="stylesheet" type="text/css" href="/css/main_dodripy.css">', 0);
+add_stylesheet('<link rel="stylesheet" type="text/css" href="/css/mediascreen_dodripy.css">', 0);
+add_javascript('<script src="/js/main_dodripy.js"></script>', 0);
 ?>
 
 <!-- 메인비주얼영역시작 -->
@@ -62,6 +62,7 @@ add_javascript('<script src="/js/main_jack.js"></script>', 0);
         <div id="guide_vid_wrap">
           <section id="guide_vid">
             <h3 class="hidden">가이드동영상</h3>
+            <!-- ?autoplay=1&mute=1 -->
             <embed width="1920" height="1080" src="https://www.youtube.com/embed/5lXtnsxrKhM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
           </section>
         </div>

@@ -1,0 +1,14 @@
+/* STORE sub_vis & sub_menu */
+#community_vis_wrap{ width:100%; height:340px; float:left; background:url("/community/images/community_visual.jpg")no-repeat fixed; border-top:solid 1px #7d0022; border-bottom:solid 1px #7d0022; box-sizing:border-box; }
+#community_menu_wrap{ float:left; width:100%; height:44px; background:#f4f4f4; }
+.community_menu{ width:1200px; height:100%; margin:0 auto; }
+.community_menu_list{ width:70%; height:100%; margin:0 auto; }
+.community_menu_list li{ float:left; width:20%; height:100%; }
+.community_menu_list li a{ display:block; width:100%; height:100%; font:normal 0.875rem/44px "Nato Sans KR"; text-align:center; text-decoration:none; color:black; }
+
+/* Media Query */
+@media screen and (max-width:1200px){
+  nav.community_menu{ width:100%; }
+  ul.community_menu_list{ width:80%; margin:0 auto; }
+  /* ul.community_menu_list li{ width:33.33%; } */
+}

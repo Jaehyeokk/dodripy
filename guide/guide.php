@@ -7,7 +7,7 @@
 	include_once('../head.php'); //루트 공통 상단을 연결합니다.
   include_once('header.php'); //각 메인메뉴 카테고리별 상단을 따로 연결합니다. ( 카테고리별 상단을 다르게 제작가능 )
   add_stylesheet('<link rel="stylesheet" href="/guide/guide_dodripy.css">', 0);
-  add_stylesheet('<link rel="stylesheet" href="/css/mediascreen_jack.css">', 0);
+  add_stylesheet('<link rel="stylesheet" href="/css/mediascreen_dodripy.css">', 0);
 ?>
 	
   <!-- 컨텐츠영역시작 -->

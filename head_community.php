@@ -8,10 +8,10 @@ if(defined('G5_THEME_PATH')) {
 
 // 모바일 접속시 모바일전용 head.php 파일연동 
 
-if (G5_IS_MOBILE) {
+/* if (G5_IS_MOBILE) {
     include_once(G5_MOBILE_PATH.'/head.php');
     return;
-}
+} */
 
 include_once(G5_PATH.'/head.sub.php');
 include_once(G5_LIB_PATH.'/latest.lib.php');
@@ -23,6 +23,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 
 add_stylesheet('<link rel="stylesheet" type="text/css" href="/css/common_dodripy.css">', 0);
+add_stylesheet('<link rel="stylesheet" type="text/css" href="/community/community_dodripy.css">', 0);
+add_stylesheet('<link rel="stylesheet" type="text/css" href="/css/mediascreen_dodripy.css">', 0);
 add_javascript('<script src="/js/common_dodripy.js"></script>', 0);
 
 ?>
@@ -111,7 +113,7 @@ add_javascript('<script src="/js/common_dodripy.js"></script>', 0);
               </ul>
             </li>
             <li><a href="/bbs/board.php?bo_table=storeA">Store</a>
-              <ul class="submenu_list">
+            <ul class="submenu_list">
                 <li><a href="/bbs/board.php?bo_table=storeA">원두&#47;드립백</a></li>
                 <li><a href="/bbs/board.php?bo_table=storeB">드립 용품</a></li>
                 <li><a href="/bbs/board.php?bo_table=storeC">기타 재료</a></li>
@@ -181,14 +183,50 @@ add_javascript('<script src="/js/common_dodripy.js"></script>', 0);
 			
 			
 	?>
+  <?
+    if ($bo_table=='communityA' || 'communityB' || 'communityC' || 'communityD' || 'communityE') echo ('
+      <!-- 비주얼영역시작 -->
+      <section id="board_visual">
+        <div id="community_vis_wrap"></div>
+        <div id="community_menu_wrap">
+          <nav class="community_menu">
+            <h2 class="hidden">커뮤니티메뉴</h2>
+            <ul class="community_menu_list">
+              <li><a href="/bbs/board.php?bo_table=communityA">공지사항</a></li>
+              <li><a href="/bbs/board.php?bo_table=communityB">뉴스/이벤트</a></li>
+              <li><a href="/bbs/board.php?bo_table=communityC">이야기방</a></li>
+              <li><a href="/bbs/board.php?bo_table=communityD">레시피/꿀팁</a></li>
+              <li><a href="/bbs/board.php?bo_table=communityE">질문/답변</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    ');
 
-	  <section id="board_visual">
-      <!--회원가입및게시판 상단 비쥬얼 -->		
-    </section> 
-		
+    else echo ('
+      <!-- 비주얼영역시작 -->
+      <section id="board_visual">
+      
+      </section>
+    ')
+  ?>
+    <?
+    if ($bo_table=='communityA') add_stylesheet('<style type="text/css"> .community_menu_list li:nth-child(1) a{font-weight:bold} </style>', 0) ;
+    if ($bo_table=='communityB') add_stylesheet('<style type="text/css"> .community_menu_list li:nth-child(2) a{font-weight:bold} </style>', 0) ;
+    if ($bo_table=='communityC') add_stylesheet('<style type="text/css"> .community_menu_list li:nth-child(3) a{font-weight:bold} </style>', 0) ;
+    if ($bo_table=='communityD') add_stylesheet('<style type="text/css"> .community_menu_list li:nth-child(4) a{font-weight:bold} </style>', 0) ;
+    if ($bo_table=='communityE') add_stylesheet('<style type="text/css"> .community_menu_list li:nth-child(5) a{font-weight:bold} </style>', 0) ;
+		?>
+
 		<div id="board_wrapper">
-
 			<section id="board_contents">
+      <?
+        if ($bo_table=='communityA') echo ('<p class="page_title">Notice</p>') ;
+        if ($bo_table=='communityB') echo ('<p class="page_title">News & Event</p>') ;
+        if ($bo_table=='communityC') echo ('<p class="page_title">talk & talk</p>') ; 
+        if ($bo_table=='communityD') echo ('<p class="page_title">Recipe & Tip</p>') ; 
+        if ($bo_table=='communityE') echo ('<p class="page_title">Q & A</p>') ; 
+      ?>  
 			<!-- 회원가입및게시판 컨텐츠 레이아웃시작 -->
 
 

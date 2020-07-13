@@ -8,10 +8,10 @@ if(defined('G5_THEME_PATH')) {
 
 //모바일 접속시 모바일전용 tail.php 파일연동 
 
-/* if (G5_IS_MOBILE) {
+if (G5_IS_MOBILE) {
     include_once(G5_MOBILE_PATH.'/tail.php');
     return;
-} */
+}
 
 ?>
 

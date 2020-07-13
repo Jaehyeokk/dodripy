@@ -22,10 +22,10 @@ include_once(G5_LIB_PATH.'/connect.lib.php');
 include_once(G5_LIB_PATH.'/popular.lib.php');
 
 
-add_stylesheet('<link rel="stylesheet" type="text/css" href="/css/common_jack.css">', 0);
-add_stylesheet('<link rel="stylesheet" type="text/css" href="/css/mediascreen_jack.css">', 0);
+add_stylesheet('<link rel="stylesheet" type="text/css" href="/css/common_dodripy.css">', 0);
+add_stylesheet('<link rel="stylesheet" type="text/css" href="/css/mediascreen_dodripy.css">', 0);
 add_stylesheet('<link rel="stylesheet" href="/store/store_dodripy.css">', 0);
-add_javascript('<script src="/js/common_jack.js"></script>', 0);
+add_javascript('<script src="/js/common_dodripy.js"></script>', 0);
 
 ?>
 
@@ -119,22 +119,22 @@ add_javascript('<script src="/js/common_jack.js"></script>', 0);
                 <li><a href="/bbs/board.php?bo_table=storeC">기타 재료</a></li>
               </ul>
             </li>
-            <li><a href="#">Community</a>
+            <li><a href="/bbs/board.php?bo_table=communityA">Community</a>
               <ul class="submenu_list">
-                <li><a href="/empty/empty.html">공지사항</a></li>
-                <li><a href="/empty/empty.html">뉴스&#47;이벤트</a></li>
-                <li><a href="/empty/empty.html">이야기방</a></li>
-                <li><a href="/empty/empty.html">레시피/꿀팁</a></li>
-                <li><a href="/empty/empty.html">질문&#47;답변</a></li>
+                <li><a href="/bbs/board.php?bo_table=communityA">공지사항</a></li>
+                <li><a href="/bbs/board.php?bo_table=communityB">뉴스&#47;이벤트</a></li>
+                <li><a href="/bbs/board.php?bo_table=communityC">이야기방</a></li>
+                <li><a href="/bbs/board.php?bo_table=communityD">레시피/꿀팁</a></li>
+                <li><a href="/bbs/board.php?bo_table=communityE">질문&#47;답변</a></li>
               </ul>
             </li>
-            <li><a href="#">Menu</a>
+            <li><a href="/menu/menu.php">Menu</a>
               <ul class="submenu_list">
-                <li><a href="/empty/empty.html">매장 위치</a></li>
-                <li><a href="/empty/empty.html">메뉴 소개</a></li>
-                <li><a href="/empty/empty.html">FAQ</a></li>
-                <li><a href="/empty/empty.html">1&#58;1 문의</a></li>
-                <li><a href="/empty/empty.html">건의하기</a></li>
+                <li><a href="/menu/menu.php">매장 위치</a></li>
+                <li><a href="/bbs/board.php?bo_table=menuA">메뉴 소개</a></li>
+                <li><a href="/bbs/board.php?bo_table=menuB">FAQ</a></li>
+                <li><a href="/bbs/board.php?bo_table=menuC">1&#58;1 문의</a></li>
+                <li><a href="/bbs/board.php?bo_table=menuD">건의하기</a></li>
               </ul>
             </li>
           </ul>
