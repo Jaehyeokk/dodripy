@@ -7,7 +7,6 @@ if(defined('G5_THEME_PATH')) {
 }
 
 // 모바일 접속시 모바일전용 head.php 파일연동 
-
 if (G5_IS_MOBILE) {
     include_once(G5_MOBILE_PATH.'/head.php');
     return;
@@ -21,10 +20,8 @@ include_once(G5_LIB_PATH.'/visit.lib.php');
 include_once(G5_LIB_PATH.'/connect.lib.php');
 include_once(G5_LIB_PATH.'/popular.lib.php');
 
-
 add_stylesheet('<link rel="stylesheet" type="text/css" href="/css/common_dodripy.css">', 0);
 add_javascript('<script src="/js/common_dodripy.js"></script>', 0);
-
 ?>
 
 <!-- 상단영역시작 -->
@@ -130,9 +127,9 @@ add_javascript('<script src="/js/common_dodripy.js"></script>', 0);
               <ul class="submenu_list">
                 <li><a href="/menu/menu.php">매장 위치</a></li>
                 <li><a href="/bbs/board.php?bo_table=menuA">메뉴 소개</a></li>
-                <li><a href="/bbs/board.php?bo_table=menuB">FAQ</a></li>
+                <li><a href="/bbs/faq.php">FAQ</a></li>
                 <li><a href="/bbs/board.php?bo_table=menuC">1&#58;1 문의</a></li>
-                <li><a href="/bbs/board.php?bo_table=menuD">건의하기</a></li>
+                <li><a href="/bbs/board.php?bo_table=menuD">예약하기</a></li>
               </ul>
             </li>
           </ul>

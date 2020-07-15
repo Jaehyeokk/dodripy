@@ -7,8 +7,8 @@
     <nav class="brand_menu">
       <h2 class="hidden">브랜드메뉴</h2>
       <ul class="brand_menu_list">
-        <li><a href="#" style="font-weight:bold">Story</a></li>
-        <li><a href="#">Identity</a></li>
+        <li><a href="#story_wrap" style="font-weight:bold">Story</a></li>
+        <li><a href="#brandlogo_wrap">Identity</a></li>
       </ul>
     </nav>
   </div>

@@ -14,9 +14,26 @@
   <div id="contents_wrap">
     <h2 class="page_title">Map</h2>
     <div id="dodripy_map_wrap">
-     <div id="dodripy_map"></div>
+      <div id="dodripy_map"></div>
+      <div class="map_text_wrap">
+        <p class="map_title">찾아오시는 길</p>
+        <p class="map_text">서울특별시 마포구 노고산동 31-11(신촌 104) 신촌녹색예술빌딩 1층 두드립와이커피<br>지하철 2호선 신촌역 6번출구 앞 위치</p>
+      </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=25563d49ea9932e40045432080aecfdf"></script>
 <script>
 var mapContainer = document.getElementById('dodripy_map'), // 지도를 표시할 div 
@@ -47,8 +64,6 @@ var marker = new kakao.maps.Marker({
 marker.setMap(map);
 // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
 // marker.setMap(null);   
-
-
 </script>
 
 

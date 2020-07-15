@@ -362,3 +362,25 @@ section#text_img p.com_box_btn a{
   display:block; width:100%; font:normal 1.125rem/1.875rem "Nanum Barun Gothic";text-decoration:none; color:white;
 }
 /* 컨텐츠영역끝 */
+/* 최근게시물영역 */
+#latest_wrap {
+  float:left; width:100%; min-height:400px;
+}
+.latest_inner {
+  width:1200px; height:100%; margin:0 auto;
+}
+.latest_notice {
+  float:left; width:29.16%; height:100%; margin-right:6.25%;
+}
+.latest_news {
+  float:left; width:29.16%; height:100%; margin-right:6.25%;
+}
+.latest_recipe {
+  float:left; width:29.16%; height:100%;
+}
+#latest_wrap .lat .lt_more {
+  color:#ccc;
+}
+#latest_wrap .lat li .new_icon {
+  color:#fff; background:#af6a6a;
+}

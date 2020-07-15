@@ -127,6 +127,7 @@ section.footer_info p.copyright{
 @media screen and (max-width:1200px){
   header#header_inner,
   footer#footer_inner {width:96%}
+  #board_contents {left:0; width:96%; margin-left:2%;}
 }
 @media screen and (max-width:980px){
   section.footer_logo {width:50%; height:60%}

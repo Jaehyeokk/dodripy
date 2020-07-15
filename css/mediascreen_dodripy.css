@@ -23,7 +23,10 @@
 @media screen and (max-width:1200px){
   /* 메인페이지 미디어쿼리 */
   /* common */
-  section#guide_inner,section#recipe_inner,section#community_inner{
+  section#guide_inner,
+  section#recipe_inner,
+  section#community_inner,
+  div.latest_inner{
     width:96%
   }
   /* recipe */

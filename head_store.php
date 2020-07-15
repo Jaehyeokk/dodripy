@@ -134,7 +134,7 @@ add_javascript('<script src="/js/common_dodripy.js"></script>', 0);
                 <li><a href="/bbs/board.php?bo_table=menuA">메뉴 소개</a></li>
                 <li><a href="/bbs/board.php?bo_table=menuB">FAQ</a></li>
                 <li><a href="/bbs/board.php?bo_table=menuC">1&#58;1 문의</a></li>
-                <li><a href="/bbs/board.php?bo_table=menuD">건의하기</a></li>
+                <li><a href="/bbs/board.php?bo_table=menuD">예약하기</a></li>
               </ul>
             </li>
           </ul>

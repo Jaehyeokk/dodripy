@@ -132,9 +132,9 @@ add_javascript('<script src="/js/common_dodripy.js"></script>', 0);
               <ul class="submenu_list">
                 <li><a href="/menu/menu.php">매장 위치</a></li>
                 <li><a href="/bbs/board.php?bo_table=menuA">메뉴 소개</a></li>
-                <li><a href="/bbs/board.php?bo_table=menuB">FAQ</a></li>
+                <li><a href="/bbs/faq.php">FAQ</a></li>
                 <li><a href="/bbs/board.php?bo_table=menuC">1&#58;1 문의</a></li>
-                <li><a href="/bbs/board.php?bo_table=menuD">건의하기</a></li>
+                <li><a href="/bbs/board.php?bo_table=menuD">예약하기</a></li>
               </ul>
             </li>
           </ul>

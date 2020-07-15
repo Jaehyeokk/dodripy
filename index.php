@@ -175,6 +175,23 @@ add_javascript('<script src="/js/main_dodripy.js"></script>', 0);
     </section>
   </div>
 
+<?/* 이 함수가 바로 최신글을 추출하는 역할을 합니다.
+  사용방법 : latest(스킨이름, 게시판아이디, 출력라인, 글자수);
+  주의: 스킨이름은 게시판 스킨이 아닌 최근게시물 스킨이름 ( skin/latest폴더안 ) 지정 
+  테마의 스킨을 사용하려면 theme/basic 과 같이 지정 */ ?>
+  <div id="latest_wrap">
+    <div class="latest_inner">
+      <div class="latest_notice">
+        <? echo latest("basic", "communityA", 5, 25); ?>
+      </div>
+      <div class="latest_news">
+        <? echo latest("basic", "communityB", 5, 25); ?>
+      </div>
+      <div class="latest_recipe">
+        <? echo latest("basic", "communityC", 5, 25); ?>
+      </div>
+    </div>
+  </div>
 
 
 <?php
