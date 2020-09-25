@@ -20,7 +20,7 @@
 }
 
 /* 해상도 981px~1200px */
-@media screen and (max-width:1200px){
+@media screen and (max-width:1220px){
   /* 메인페이지 미디어쿼리 */
   /* common */
   section#guide_inner,
